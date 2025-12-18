@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cozy Discord Server</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    /* Animated background */
+    body {
+      background: url("friend.gif")
+        no-repeat center top;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    /* Dark overlay */
+    .overlay {
+      background: rgba(0, 0, 0, 0.45);
+      min-height: 100vh;
+      padding: 40px 15px 80px; /* extra bottom space */
+    }
+
+    /* Main card */
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 14px 0;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Join button */
+    .join-btn {
+      display: block;
+      margin: 28px auto 0;
+      width: fit-content;
+      padding: 14px 32px;
+      background: #5865F2;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 999px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .join-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(88,101,242,0.45);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="card">
+      <h1>🌸 welcome to your new favorite corner of the internet 🌸</h1>
+
+      <p>
+        a soft + cozy server where the vibes are always chill,
+        the chats flow easy, and everyone’s just here to relax
+        and be themselves.
+      </p>
+
+      <ul>
+        <li>✨ aesthetic layouts</li>
+        <li>💬 friendly convos (no pressure to talk tho!)</li>
+        <li>📸 cute channels for art, music, moods, and more</li>
+        <li>🎧 late-night voice chats + lo-fi background</li>
+        <li>🌙 warm, welcoming energy always</li>
+      </ul>
+
+      <p>
+        whether you’re here to make friends, share your vibe,
+        or just exist quietly — you’re welcome here 🫶
+      </p>
+
+      <p>
+        ☁️ Perfect space to be yourself<br>
+        a low-key, welcoming corner of the internet.<br>
+        talk. vent. share music. make friends — no pressure.
+      </p>
+
+      <p>
+        no chaos. just real people & calm vibes.<br>
+        come vibe with us 💌
+      </p>
+
+      <!-- JOIN LINK (now guaranteed visible) -->
+      <a class="join-btn" href="https://discord.gg/BPMWqpzuMy">
+        💌 Join us
+      </a>
+    </div>
+  </div>
+</body>
+</html>
